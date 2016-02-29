@@ -1,0 +1,29 @@
+ppdock_mode         flexible
+data_directory      GALAXY_DATA_HOME
+print_level         30
+energy_print_level  30
+infile_pdb          COMPLEX_S
+read_multiple_models yes
+n_res_receptor      N_RES_REC
+!
+top_type            polarh
+vdw_r_scale         0.9
+soften_short        yes
+!
+blastfile           PSSM_COMPLEX
+!
+weight_type         PPDock
+!
+SA_type             haber
+ASP_type            2
+!
+dfire_weight        8.0
+vdw_weight          1.0
+elec_weight         0.15
+SA_weight           4.5
+hbond_weight        6.0
+conserve_weight     3.0
+rotamer_weight      3.0
+bound_minimization  yes
+!
+fix_type            all

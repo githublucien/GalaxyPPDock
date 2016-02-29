@@ -1,0 +1,41 @@
+ppdock_mode              flexible
+data_directory           GALAXY_DATA_HOME
+print_level              30
+energy_print_level       30
+ref_file                 r001.pdb
+infile_pdb               r001.pdb
+csa_first_bank_fname     ./r
+outfile_prefix           ./
+n_res_receptor           N_RES_REC
+!
+top_type                 polarh
+vdw_r_scale              0.9
+soften_short             yes
+!                        
+blastfile                PSSM_COMPLEX
+!                        
+weight_type              PPDock
+!
+SA_type                  haber
+ASP_type                 2
+!                        
+dfire_weight             8.0
+vdw_weight               1.0
+elec_weight              0.15
+SA_weight                4.5
+hbond_weight             6.0
+conserve_weight          3.0
+rotamer_weight           3.0
+!                        
+csa_bank                 N_BANK  N_BANK
+csa_n_opr_px              5     3     2
+csa_D_factor             2.5    6.25  50000
+csa_pert_trans           2.0               
+csa_pert_rotvec          0.1               
+csa_seed                 2     20   10000    2
+csa_n_csa_cycle          1                    
+csa_distance_type        20                   
+rep_conf_seed_cut        0.1                  
+csa_is                   1     0.4            
+!
+fix_type                 all

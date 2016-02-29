@@ -1,0 +1,21 @@
+data_directory      GALAXY_DATA_HOME
+print_level         0
+energy_print_level  30
+infile_pdb          REFERENCE_PDB
+ligprotein_pdb      LIGAND_PROTEINS
+n_res_receptor      N_RES_REC
+!
+top_type            polarh
+vdw_r_scale         0.9
+soften_short        yes
+weight_type         PPDock
+!
+dfire_weight        1.0
+vdw_weight          1.0
+elec_weight         1.0
+SA_weight           0.0
+hbond_weight        0.0
+conserve_weight     0.0
+rotamer_weight      0.0
+!
+END
