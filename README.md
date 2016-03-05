@@ -1,33 +1,32 @@
-# GalaxyPPDock
+# GalaxyPPDock: A program for protein-protein docking based on cluster-guieded conformational space annealing.
 
-0.Remark
-
-The GalaxyPPDock distribution version supports only Linux 64-bit OS and binary files compiled with MPI option.
-Linux 32-bit OS or binary files compiled with serial option are not supported.
-
-GalaxyPPDock is a protein-protein dockin program based on
-cluster-guided conformational space annealing.
+##0.Remark
+The GalaxyPPDock distribution version supports only **Linux 64-bit** OS and binary files compiled with MPI option.
+**Linux 32-bit** OS or binary files compiled with serial option are not supported.
 GalaxyPPDock takes receptor pdb file, ligand pdb file, and ZDOCK output file.
-Optionally, you can use PSSM(Position-Specific Scoring Matrix for more accurate docking.
+Optionally, you can use PSSM(Position-Specific Scoring Matrix) for more accurate protein-protein docking.
 
-GalaxyPPDock is only working linux system and mpi process.
+##1. Installation
+GalaxyPPDock is only working **Linux 64-bit** system and binary files compiled with MPI option.
 Please install mpich2 first before running GalaxyPPDock.
 
 #####################################################################################
-Install mpich2
+1-1. Install mpich2
 ####################
 1. Download mpich from:
-   http://www.mpich.org/static/downloads/3.2/hydra-3.2.tar.gz
+   * http://www.mpich.org/static/downloads/3.2/hydra-3.2.tar.gz
+2. Unzip and place the download files
+   * tar -xvzf hydra-3.2.tar.gz
+3. Move hydra MPI directory
+   * cd hydra-3.2
+4. Add environment variables in $HOME/.bashrc
+   * export LD=ld
+5. Configure mpich
+   * ./configure
+6. Install mpich
+   * make
 
-2. tar -xvzf hydra-3.2.tar.gz
-
-3. cd hydra-3.2
-4. Add environment variables in $HOME/.bashrc (or $HOME/.bashrc_profile)
-    export LD=ld
-5. ./configure
-6. make
-
-You can find mpiexec.hydra file in the current directory.
+You can find **mpiexec.hydra** file in the current directory.
 
 #####################################################################################
 Running GalaxyPPDock
