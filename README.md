@@ -50,8 +50,8 @@ You can find **mpiexec.hydra** file in the current directory.
 4. Add environment variables in $HOME/.bashrc
    * export GALAXYPPDOCK_HOME=$HOME/galaxyppdock
    * export EXEC_MPI=$HOME/hydra-3.2/mpiexec.hydra
-   * (*example*: export GALAXYPPDOCK_HOME=/applic/galaxyppdock
-                 export EXEC_MPI=/applic/hydra-3.2/mpiexec.hydra)
+   * (*example*: export GALAXYPPDOCK_HOME=/applic/galaxyppdock)
+   * (*example*: export EXEC_MPI=/applic/hydra-3.2/mpiexec.hydra)
 
 5. Move GalaxyPPDock example directory
    * cd $GALAXYPPDOCK_HOME/examples/1cgi (or 1eaw, TA12)
