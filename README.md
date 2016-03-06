@@ -33,12 +33,9 @@ You can find **mpiexec.hydra** file in the current directory.
 ####################
 1. Download the GalaxyPPDock program
    * Download a copy of GalaxyPPDock
-      * https://github.com/seoklab/GalaxyPPDock/zipball/master/seoklab-GalaxyPPDock-e5ca21.tar.gz
-      * https://github.com/seoklab/GalaxyPPDock/zipball/master/seoklab-GalaxyPPDock-e5ca21.zip
+      * https://github.com/seoklab/GalaxyPPDock/archive/master.zip
 2. Unzip and place the downloaded files
-   * unzip seoklab-GalaxyPPDock-e5ca21.zip
-   * mv seoklab-GalaxyPPDock-e5ca21 $GALAXYPPDOCK_HOME
-      (*example*: GALAXYPPDOCK_HOME=/applic/galaxyppdock)
+   * unzip master.zip
 
 3. Check the downloaded files
    * There should exist:
@@ -48,9 +45,9 @@ You can find **mpiexec.hydra** file in the current directory.
       * examples: directory for example files
 
 4. Add environment variables in $HOME/.bashrc
-   * export GALAXYPPDOCK_HOME=$HOME/galaxyppdock
+   * export GALAXYPPDOCK_HOME=$HOME/GalaxyPPDock-master
    * export EXEC_MPI=$HOME/hydra-3.2/mpiexec.hydra
-   * (*example*: export GALAXYPPDOCK_HOME=/applic/galaxyppdock)
+   * (*example*: export GALAXYPPDOCK_HOME=/applic/GalaxyPPDock-master)
    * (*example*: export EXEC_MPI=/applic/hydra-3.2/mpiexec.hydra)
 
 5. Move GalaxyPPDock example directory
