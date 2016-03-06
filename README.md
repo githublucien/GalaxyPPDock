@@ -44,8 +44,8 @@ You can find **mpiexec.hydra** file in the current directory.
    * There should exist:
       * bin: directory for executables  
       There should be add_miss, energy_ligprotein, ppdock_opt.mpi, and ppdock_csa.mpi
-   * data: directory for data files
-   * examples: directory for example files
+      * data: directory for data files
+      * examples: directory for example files
 
 4. Add environment variables in $HOME/.bashrc
    * export GALAXYPPDOCK_HOME=$HOME/galaxyppdock
