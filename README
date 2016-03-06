@@ -56,7 +56,7 @@ You can find **mpiexec.hydra** file in the current directory.
 6. Running GalaxyPPDock
    * ../../run.py receptor.pdb ligand.pdb zdock.out (default option)
 
-   (other option)
+   (other options)
    * ../../run.py receptor.pdb ligand.pdb zdock.out -pssm receptor.pssm ligand.pssm (using PSSM file)
    * ../../run.py receptor.pdb ligand.pdb zdock.out -n 50 (using multiple core, default=2)
 
